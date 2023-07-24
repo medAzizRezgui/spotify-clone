@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { HiHome, HiSearch } from "react-icons/hi";
 import Button from "@/components/Button";
+import useAuthModal from "@/hooks/useAuthModal";
 
 interface HeaderProps {
   className?: string;
@@ -11,7 +12,7 @@ interface HeaderProps {
 }
 const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const router = useRouter();
-
+  const authModal = useAuthModal();
   const handleLogout = () => {
     // Handle Logout
   };
@@ -65,10 +66,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         <div className={"flex items-center justify-between gap-x-4"}>
           <>
             <div>
-              <Button onClick={() => {}}>Sign Up</Button>
+              <Button onClick={authModal.onOpen}>Sign Up</Button>
             </div>
             <div>
-              <Button onClick={() => {}} className={"bg-white "}>
+              <Button onClick={authModal.onOpen} className={"bg-white "}>
                 Log in
               </Button>
             </div>
