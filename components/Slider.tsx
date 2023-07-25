@@ -18,7 +18,7 @@ const Slider: React.FC<SliderProps> = ({ onChange, value = 1 }) => {
       step={0.1}
       aria-label={"Volume"}
       className={
-        "relative flex h-10 w-full touch-none select-none items-center"
+        "relative flex h-10 w-full cursor-pointer touch-none select-none items-center"
       }
     >
       <RadixSlider.Track
