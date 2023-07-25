@@ -93,7 +93,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           ) : (
             <>
               <div>
-                <Button className={"px-6 py-2"} onClick={authModal.onOpen}>
+                <Button
+                  className={" px-6 py-2 text-white"}
+                  onClick={authModal.onOpen}
+                >
                   Sign Up
                 </Button>
               </div>
