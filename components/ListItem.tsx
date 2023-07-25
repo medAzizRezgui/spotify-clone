@@ -18,6 +18,7 @@ const ListItem: React.FC<ListItemProps> = ({ name, image, href }) => {
   };
   return (
     <button
+      onClick={onClick}
       className={
         "group relative flex items-center gap-x-4 overflow-hidden rounded-md bg-neutral-100/10 pr-4 transition hover:bg-neutral-100/20"
       }

@@ -66,6 +66,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({ songId }) => {
         toast.success("Liked!");
       }
     }
+    router.refresh();
   };
   return (
     <button onClick={handleLike} className={"transition hover:opacity-75"}>
