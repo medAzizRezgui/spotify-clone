@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   title: "Spotify Clone",
   description: "Listen to Music !",
 };
-
 export default async function RootLayout({
   children,
 }: {
