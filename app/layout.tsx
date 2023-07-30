@@ -16,8 +16,11 @@ const font = Figtree({ subsets: ["latin"], display: "swap" });
 export const revalidate = 0;
 
 export const metadata: Metadata = {
-  title: "Spotify Clone",
+  title: "Spotify",
   description: "Listen to Music !",
+  // icons: {
+  //   icon: ["/favicon.ico"],
+  // },
 };
 export default async function RootLayout({
   children,
