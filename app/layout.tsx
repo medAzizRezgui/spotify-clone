@@ -18,9 +18,6 @@ export const revalidate = 0;
 export const metadata: Metadata = {
   title: "Spotify",
   description: "Listen to Music !",
-  // icons: {
-  //   icon: ["/favicon.ico"],
-  // },
 };
 export default async function RootLayout({
   children,
